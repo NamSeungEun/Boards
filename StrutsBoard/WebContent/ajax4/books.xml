@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book>
+		<title>겨울왕국</title>
+		<author>디즈니</author>
+	</book>
+	<book>
+		<title>이솝우화</title>
+		<author>미드</author>
+	</book>
+	<book>
+		<title>힐러리의 삶</title>
+		<author>클린턴</author>
+	</book>
+	<book>
+		<title>수지의 어린 시절</title>
+		<author>EBS</author>
+	</book>
+
+</books>

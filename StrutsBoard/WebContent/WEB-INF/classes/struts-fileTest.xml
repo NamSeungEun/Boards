@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts 
+PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+<package name="fileTest" extends="default" namespace="/fileTest">
+	<action name="created" class="com.fileTest.FileTestAction" method="created">
+		<result name="input">/fileTest/write.jsp</result>
+		<result name="success">/fileTest/view.jsp</result>
+	</action>
+	
+	<action name="down" class="com.fileTest.FileTestAction" method="down">
+		<result name="success" type="stream">
+			<param name="inputName">inputStream</param>
+			<param name="contentType">application/octet-stream</param>
+			<param name="contentDisposition">fileName=${originalFileName}</param>
+			<param name="bufferSize">1000000</param>
+		</result>
+	</action>
+	
+	
+	<action name="download" class="com.fileTest.FileTestAction" method="download">
+	
+	</action>
+</package>
+
+</struts>

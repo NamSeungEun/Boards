@@ -1,0 +1,55 @@
+﻿@CHARSET "UTF-8";
+
+/* 브라우저 열면 맨 좌측 상단에서부터 글씨 쓰게 하겠다 * */
+* { 
+	margin:0px;
+	padding:0px;
+}
+
+body {	
+	font-size: 9pt;
+	font-family:굴림;
+}
+
+a {
+	cursor: hand;
+	color: #000000;
+	text-decoration: none;
+	font-size: 9pt;
+	line-height: 150%;
+}
+
+/* 마우스를 올리면 손가락 모양으로 바뀌는 것 hand
+마우스 대면 언더라인이 그려짐 underline */
+
+a:hover, a:active {
+	font-size: 9pt;
+	color: #F28011;
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+}
+
+td {font-size: 9pt;}
+
+.btn1 {
+	font-size: 9pt; 
+	color:rgb(0,0,0); 
+	background-color:rgb(245,245,245); 
+	line-height:16px;
+}
+
+.btn2 {   
+	color:#000000;
+	font: normal 9pt '굴림','trebuchet ms',helvetica,sans-serif;
+	background-color:#E4E4E4;
+	border:1px solid;
+	border-color: #696 #363 #363 #696;
+	line-height:16px;	
+	padding:1px 6px 1px 6px;
+}
+
+/* 굴림체 없으면 trebuchet ms 없으면 helvetica 찾게하는 노말  */
+/* padding: 왼 위 오른 아래 */
